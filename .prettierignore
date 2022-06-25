@@ -1,0 +1,9 @@
+node_modules
+package.json
+img
+.env
+READ.me
+artifacts
+cache
+coverage*
+gasReporterOutput.json
