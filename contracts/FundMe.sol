@@ -58,6 +58,10 @@ contract FundMe {
         return priceFeed.version();
     }
 
+    function balanceOf() public view returns (uint256) {
+        return address(this).balance;
+    }
+
     function withdraw() public payable onlyOwner {
         for (
             uint256 funderIndex = 0;

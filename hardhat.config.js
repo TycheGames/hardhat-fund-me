@@ -61,8 +61,8 @@ module.exports = {
         bnbmainnet: {
             url: BNBMAINNET_RPC_URL,
             accounts: [PRIVATE_KEY],
-            chainId: 5,
-            blockConfirmations: 56,
+            chainId: 56,
+            blockConfirmations: 6,
         },
     },
     gasReporter: {
@@ -80,9 +80,13 @@ module.exports = {
         //HT => Heco
         token: "MATIC",
     },
+
     etherscan: {
         //apiKey: ETHERSCAN_API_KEY,
-        //bsc api key
-        apiKey: BSCSCAN_API_KEY,
+        //ether api key
+        apiKey: {
+            rinkeby: ETHERSCAN_API_KEY,
+            bnbtestnet: BSCSCAN_API_KEY,
+        },
     },
 }
